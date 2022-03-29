@@ -1,2 +1,4 @@
-# BizzBuzz
-kata de ejercicoi BizzBuzz
+# FizzBuzz
+kata del ejercicio FizzBuzz
+
+http://codingdojo.org/kata/FizzBuzz/
