@@ -14,13 +14,14 @@ public class FizzBuzz {
     }
 
     public FizzBuzzText calculateResult(FizzBuzzNumber number){
+        FizzBuzzText numberText = new FizzBuzzText(""+number);
         FizzBuzzText result = new FizzBuzzText(""+number);
-
-        if (is_multiple(number, new FizzBuzzNumber(3))){
+        
+        if (is_multiple(number, new FizzBuzzNumber(3)) || numberText.contains("3")){
             result = new FizzBuzzText("Fizz");
         }
 
-        if (is_multiple(number, new FizzBuzzNumber(5))){
+        if (is_multiple(number, new FizzBuzzNumber(5)) || numberText.contains("5")){
             result = result.contains("Fizz") ? new FizzBuzzText("FizzBuzz") : new FizzBuzzText("Buzz");
         }
 
